@@ -12,7 +12,11 @@ const Loading = () => {
 function App() {
   const [coinsData, setCoinsData] = useState([]);
   const [page, setPage] = useState(1);
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
+
+  const key = process.env.REACT_APP_GECKOAPI_KEY;
+
+  console.log(key)
 
   async function fetchData() {
     try {
@@ -22,7 +26,7 @@ function App() {
           method: "GET",
           headers: {
             accept: "application/json",
-            "x-cg-demo-api-key": process.env.development.local.GECKO_APIKEY,
+            "x-cg-demo-api-key": key,
           },
         }
       );
