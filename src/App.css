@@ -36,3 +36,39 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  background-color: #282c34;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 210px;
+  height: 500px;
+  gap: 4rem;
+  background-color: gray;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.img > img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.loading {
+  height: 200px;
+  text-align: center;
+}
