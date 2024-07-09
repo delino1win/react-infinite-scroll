@@ -22,7 +22,7 @@ function App() {
           method: "GET",
           headers: {
             accept: "application/json",
-            "x-cg-demo-api-key": "CG-WUJ8QbbvPVSJ7n65pXMCy9r2",
+            "x-cg-demo-api-key": process.env.development.local.GECKO_APIKEY,
           },
         }
       );
